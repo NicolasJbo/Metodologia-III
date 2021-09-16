@@ -36,19 +36,16 @@ public class Persona {
 			return this;
 		}
 		public Builder setLugarTrabajo(String lugar){
-			if(persona.edad >=18) {
+
 				persona.lugarTrabajo = lugar;
-			}else {
-				throw new IllegalArgumentException("Sos menor de edad para trabajar !");
-			}
+
 			return  this;
 		}
 		public Builder setColegio(String cole){
-			if(persona.edad <18) {
+
 				persona.colegio = cole;
-			}else {
-				throw new IllegalArgumentException("sos grnde para ir al cole1");
-			}
+
+
 			return  this;
 		}
 	
