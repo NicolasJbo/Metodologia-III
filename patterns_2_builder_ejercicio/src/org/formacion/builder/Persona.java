@@ -25,13 +25,13 @@ public class Persona {
 		}
 		
 		public Builder setMayor(int edad) {
-			if (edad < 18) throw new IllegalArgumentException("es menor de edad " + edad);
+
 			persona.edad = edad;
 			return this;
 		}
 		
 		public Builder setMenor(int edad) {
-			if (edad >= 18) throw new IllegalArgumentException("es mayor de edad " + edad);
+
 			persona.edad = edad;
 			return this;
 		}
